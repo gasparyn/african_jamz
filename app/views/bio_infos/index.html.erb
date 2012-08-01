@@ -1,0 +1,27 @@
+<h1>Listing bio_infos</h1>
+
+<table>
+  <tr>
+    <th>Dob</th>
+    <th>Country</th>
+    <th>Married</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @bio_infos.each do |bio_info| %>
+  <tr>
+    <td><%= bio_info.dob %></td>
+    <td><%= bio_info.country_id %></td>
+    <td><%= bio_info.married %></td>
+    <td><%= link_to 'Show', bio_info %></td>
+    <td><%= link_to 'Edit', edit_bio_info_path(bio_info) %></td>
+    <td><%= link_to 'Destroy', bio_info, :method => :delete, :data => { :confirm => 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Bio info', new_bio_info_path %>

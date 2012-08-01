@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Dob:</b>
+  <%= @bio_info.dob %>
+</p>
+
+<p>
+  <b>Country:</b>
+  <%= @bio_info.country_id %>
+</p>
+
+<p>
+  <b>Married:</b>
+  <%= @bio_info.married %>
+</p>
+
+
+<%= link_to 'Edit', edit_bio_info_path(@bio_info) %> |
+<%= link_to 'Back', bio_infos_path %>

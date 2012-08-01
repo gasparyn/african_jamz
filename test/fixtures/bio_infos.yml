@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  dob: 2012-07-31 21:43:44
+  country_id: 1
+  married: false
+
+two:
+  dob: 2012-07-31 21:43:44
+  country_id: 1
+  married: false
