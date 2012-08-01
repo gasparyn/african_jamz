@@ -1,6 +1,8 @@
 AfricaLyrics::Application.routes.draw do
   
   
+  resources :albums
+
   resources :bio_infos
 
   resources :artists
